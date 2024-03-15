@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorld.Vistas.Convertir"
+             NavigationPage.HasNavigationBar="False">
+    <!-- Contonedores: StackLayout(capa) | Frame(capa único Hijo) | Grid(Tabla) -->
+    <Grid RowDefinitions="*,*" ColumnDefinitions="*,*">
+        <Button Text="SENATI" Grid.Row="0" Grid.Column="0"/>
+        <Button Text="CHINCHA" Grid.Row="0" Grid.Column="1"/>
+        <Button Text="INGIENERIA" Grid.Row="1" Grid.Column="0"/>
+        <Button Text="SOTFWARE" Grid.Row="1" Grid.Column="1"/>
+    </Grid>
+</ContentPage>

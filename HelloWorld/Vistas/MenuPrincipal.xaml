@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorld.Vistas.MenuPrincipal"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <!-- Orientacion Vertical (Uno abajo del otro), Horizontal (Uno al lado del otro) -->
+        <StackLayout BackgroundColor="Aqua"
+                     Orientation="Vertical">
+            <Label Text="Conversor" 
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   Margin="0,20,0,0"
+                   HorizontalTextAlignment="Center"/>
+            <!-- La etiqueta frame permite un unico NODO hijo -->
+            <Frame Margin="20"
+                   CornerRadius="10"
+                   VerticalOptions="FillAndExpand">
+                <StackLayout VerticalOptions="Center"
+                             Spacing="20">
+                    <Image Source="https://carpintec.com.pe/cdn/shop/files/Cinta_metrica_wincha_compacta_contra_impactos_3mt_12771_Truper_-_1_700x700.jpg" />
+                    <Label Text="Centimentros a metros"
+                           FontAttributes="Bold"
+                           FontSize="20"
+                           HorizontalTextAlignment="Center"/>
+                    <Button Text="Iniciar" 
+                            BackgroundColor="Aquamarine"
+                            TextColor="White"
+                            CornerRadius="10"
+                            x:Name="btnIniciarApp"
+                            Clicked="btnIniciarApp_Clicked"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

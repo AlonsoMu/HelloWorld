@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorld.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Bienvenidos a Xamarin" HorizontalTextAlignment="Center" TextColor="White" FontSize="30"/>
+        </Frame>
+        <Label Text="Jesús Eduardo Matta Ramos"
+               FontSize="20"
+               TextColor="CadetBlue"
+               HorizontalOptions="Center"/>
+        <Button Text="Mostrar créditos"
+                BackgroundColor="DarkCyan"
+                Margin="0,20,0,0"
+                FontSize="16"
+                TextTransform="None"
+                CornerRadius="15"
+                TextColor="White"/>
+        <Label Text="SENATI"
+               HorizontalTextAlignment="Center"/>
+    </StackLayout>
+
+</ContentPage>
